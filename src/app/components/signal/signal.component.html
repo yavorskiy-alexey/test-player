@@ -1,0 +1,5 @@
+<div class="mb-3" *ngIf="signal">
+  <div>Date: {{signal.timeStamp | date: 'yyyy-MM-dd H:mm:ss'}}</div>
+  <div>Frequency: {{signal.frequency}}</div>
+  <div>Point coords: Lat: <span>{{signal.point.lat}}</span> Lng: <span>{{signal.point.lon}}</span></div>
+</div>
