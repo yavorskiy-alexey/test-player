@@ -1,0 +1,5 @@
+<button pButton label="Play" (click)="play()" class="p-button-success"></button>
+<button pButton [label]="paused ? 'Resume' : 'Pause'" (click)="pause(!paused)" class="p-button-secondary ml-2"></button>
+<button pButton label="Live" (click)="live()" class="p-button-danger ml-2"></button>
+<p-slider styleClass="w-3 mt-3" [(ngModel)]="value" [min]="0" [max]="values.length"
+          (onChange)="onUpdateValue($any($event).value)" (onSlideEnd)="onUpdateValue($event.value)"></p-slider>

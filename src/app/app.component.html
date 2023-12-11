@@ -1,4 +1,5 @@
 <router-outlet></router-outlet>
 
 <app-signal class="w-3" [signal]="signal"></app-signal>
-<app-player (update)="onUpdateSignal($event)"></app-player>
+<!--<app-player (update)="onUpdateSignal($event)"></app-player>-->
+<app-pausable-player (update)="onUpdateSignal($event)"></app-pausable-player>

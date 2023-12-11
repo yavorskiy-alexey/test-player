@@ -9,12 +9,14 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ButtonModule} from 'primeng/button';
 import {SliderModule} from 'primeng/slider';
 import {FormsModule} from '@angular/forms';
+import { PausablePlayerComponent } from './components/pausable-player/pausable-player.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignalComponent,
-    PlayerComponent
+    PlayerComponent,
+    PausablePlayerComponent
   ],
   imports: [
     BrowserModule,
